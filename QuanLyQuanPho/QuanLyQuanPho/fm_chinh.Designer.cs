@@ -31,6 +31,9 @@ namespace QuanLyQuanPho
         {
             this.mns_quanly = new System.Windows.Forms.MenuStrip();
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmMónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thanhToánToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chuyểnBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuchuquan = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +46,8 @@ namespace QuanLyQuanPho
             this.panel3 = new System.Windows.Forms.Panel();
             this.tb_thanhtien = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.neud_giamgia = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
             this.bt_thanhtoan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.nmFoodCount = new System.Windows.Forms.NumericUpDown();
@@ -50,22 +55,17 @@ namespace QuanLyQuanPho
             this.label1 = new System.Windows.Forms.Label();
             this.cbFood = new System.Windows.Forms.ComboBox();
             this.cbCategory = new System.Windows.Forms.ComboBox();
-            this.neud_giamgia = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
             this.flp_banan = new System.Windows.Forms.FlowLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bt_chuyenban = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.cb_chuyenban = new System.Windows.Forms.ComboBox();
-            this.thêmMónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thanhToánToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chuyểnBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mns_quanly.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.neud_giamgia)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.neud_giamgia)).BeginInit();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +93,30 @@ namespace QuanLyQuanPho
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
             this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
             this.nhânViênToolStripMenuItem.Text = "Chức Năng";
+            // 
+            // thêmMónToolStripMenuItem
+            // 
+            this.thêmMónToolStripMenuItem.Name = "thêmMónToolStripMenuItem";
+            this.thêmMónToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
+            this.thêmMónToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.thêmMónToolStripMenuItem.Text = "Thêm món";
+            this.thêmMónToolStripMenuItem.Click += new System.EventHandler(this.thêmMónToolStripMenuItem_Click_1);
+            // 
+            // thanhToánToolStripMenuItem
+            // 
+            this.thanhToánToolStripMenuItem.Name = "thanhToánToolStripMenuItem";
+            this.thanhToánToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
+            this.thanhToánToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.thanhToánToolStripMenuItem.Text = "Thanh toán";
+            this.thanhToánToolStripMenuItem.Click += new System.EventHandler(this.thanhToánToolStripMenuItem_Click_1);
+            // 
+            // chuyểnBànToolStripMenuItem
+            // 
+            this.chuyểnBànToolStripMenuItem.Name = "chuyểnBànToolStripMenuItem";
+            this.chuyểnBànToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
+            this.chuyểnBànToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
+            this.chuyểnBànToolStripMenuItem.Text = "Chuyển bàn";
+            this.chuyểnBànToolStripMenuItem.Click += new System.EventHandler(this.chuyểnBànToolStripMenuItem_Click_1);
             // 
             // thôngToolStripMenuItem
             // 
@@ -198,6 +222,29 @@ namespace QuanLyQuanPho
             this.label4.TabIndex = 5;
             this.label4.Text = "Thành Tiền:";
             // 
+            // neud_giamgia
+            // 
+            this.neud_giamgia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.neud_giamgia.Location = new System.Drawing.Point(16, 90);
+            this.neud_giamgia.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.neud_giamgia.Name = "neud_giamgia";
+            this.neud_giamgia.Size = new System.Drawing.Size(142, 30);
+            this.neud_giamgia.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(29, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 22);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Giảm Giá (%):";
+            // 
             // bt_thanhtoan
             // 
             this.bt_thanhtoan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -284,29 +331,6 @@ namespace QuanLyQuanPho
             this.cbCategory.TabIndex = 0;
             this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
-            // neud_giamgia
-            // 
-            this.neud_giamgia.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.neud_giamgia.Location = new System.Drawing.Point(16, 90);
-            this.neud_giamgia.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.neud_giamgia.Name = "neud_giamgia";
-            this.neud_giamgia.Size = new System.Drawing.Size(142, 30);
-            this.neud_giamgia.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(29, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Giảm Giá (%):";
-            // 
             // flp_banan
             // 
             this.flp_banan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -355,27 +379,6 @@ namespace QuanLyQuanPho
             this.cb_chuyenban.Size = new System.Drawing.Size(194, 30);
             this.cb_chuyenban.TabIndex = 1;
             // 
-            // thêmMónToolStripMenuItem
-            // 
-            this.thêmMónToolStripMenuItem.Name = "thêmMónToolStripMenuItem";
-            this.thêmMónToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D1)));
-            this.thêmMónToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
-            this.thêmMónToolStripMenuItem.Text = "Thêm món";
-            // 
-            // thanhToánToolStripMenuItem
-            // 
-            this.thanhToánToolStripMenuItem.Name = "thanhToánToolStripMenuItem";
-            this.thanhToánToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
-            this.thanhToánToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
-            this.thanhToánToolStripMenuItem.Text = "Thanh toán";
-            // 
-            // chuyểnBànToolStripMenuItem
-            // 
-            this.chuyểnBànToolStripMenuItem.Name = "chuyểnBànToolStripMenuItem";
-            this.chuyểnBànToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
-            this.chuyểnBànToolStripMenuItem.Size = new System.Drawing.Size(247, 26);
-            this.chuyểnBànToolStripMenuItem.Text = "Chuyển bàn";
-            // 
             // fm_chinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -393,10 +396,10 @@ namespace QuanLyQuanPho
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.neud_giamgia)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.neud_giamgia)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);

@@ -234,5 +234,20 @@ namespace QuanLyQuanPho
         {
 
         }
+
+        private void thêmMónToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            btnAddFood_Click(this, new EventArgs());
+        }
+
+        private void thanhToánToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            bt_thanhtoan_Click(this, new EventArgs());
+        }
+
+        private void chuyểnBànToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            bt_chuyenban_Click(this, new EventArgs());
+        }
     }
 }
